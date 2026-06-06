@@ -1,6 +1,6 @@
 # CELLSIUS — Hydrogen Aircraft Range Model
 
-An interactive range simulation for the CELLSIUS H2-Sling aircraft, comparing gaseous (350 bar) and liquid hydrogen storage as a function of tank efficiency, aerodynamic performance, and fuel-cell system mass.
+An interactive range simulation for the CELLSIUS H2-Sling aircraft, comparing gaseous (700 bar) and liquid hydrogen storage as a function of tank efficiency, aerodynamic performance, and fuel-cell system mass.
 
 Built as a design-space tool to understand what actually limits hydrogen aircraft range — and which parameters matter most.
 
@@ -10,7 +10,7 @@ Built as a design-space tool to understand what actually limits hydrogen aircraf
 
 ![Simulation screenshot](screenshot.png)
 
-GH₂ (blue) represents the current H2-Sling at 350 bar. LH₂ (orange) shows the potential of a future cryogenic aircraft. Sliders let you explore how tank technology, fuel-cell mass, and aerodynamics shift the numbers in real time.
+GH₂ (blue) represents the current H2-Sling at 700 bar. LH₂ (orange) shows the potential of a future cryogenic aircraft. Sliders let you explore how tank technology, fuel-cell mass, and aerodynamics shift the numbers in real time.
 
 ---
 
@@ -18,7 +18,7 @@ GH₂ (blue) represents the current H2-Sling at 350 bar. LH₂ (orange) shows th
 
 Getting a hydrogen aircraft to fly further than 200 km is harder than swapping in a bigger tank:
 
-- The **tank dominates the weight budget** — at 350 bar, only ~6% of the tank+H₂ assembly is actual fuel. The rest is carbon-fibre pressure vessel.
+- The **tank dominates the weight budget** — at 700 bar, only ~6% of the tank+H₂ assembly is actual fuel. The rest is carbon-fibre pressure vessel.
 - A **heavier fuel-cell stack** improves power output but adds directly to MTOW, consuming range it was meant to enable.
 - **Liquid hydrogen** sidesteps the pressure vessel problem but demands cryogenic insulation at −253 °C and introduces boil-off and handling complexity.
 - The **lift-to-drag ratio** of the airframe is arguably the single highest-leverage parameter — and it gets worse as the aircraft grows heavier to carry more hydrogen.
@@ -82,7 +82,7 @@ For the CELLSIUS case, m_H₂ = 5.2 kg on a 1050 kg aircraft — a fuel fraction
 
 ## The Two Cases
 
-| | GH₂ 350 bar (H2-Sling) | LH₂ cryo (next FP) |
+| | GH₂ 700 bar (H2-Sling) | LH₂ cryo (next FP) |
 |---|---|---|
 | Storage | Compressed gas, Type-IV CFRP tank | Liquid at −253 °C, insulated vessel |
 | Tank efficiency ε | 3–9 % | 8–30 % |
@@ -109,7 +109,7 @@ The shaded bands on the centre plot show the achievable efficiency window for ea
 
 | Slider | Range | Effect |
 |---|---|---|
-| **ε GH₂ [%]** | 1–15 % | Gravimetric efficiency of the 350-bar tank. Realistic range: 3–9 %. |
+| **ε GH₂ [%]** | 1–15 % | Gravimetric efficiency of the 700-bar tank. Realistic range: 3–9 %. |
 | **ε LH₂ [%]** | 3–35 % | Gravimetric efficiency of the cryogenic vessel. Realistic range: 8–30 %. |
 | **η_fc [%]** | 35–70 % | Fuel-cell system efficiency (LHV basis). 52 % is realistic for a modern PEM system. |
 

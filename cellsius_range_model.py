@@ -49,13 +49,13 @@ D0 = dict(
     budget_fc   =  87.0,   # kg   tank + H2  (→ 5.2 kg H2 at ε=6 %, MTOW=1050 kg)
     m_fc        = 180.0,   # kg   FC stack + BoP (105 kW system)
     L_D         =   8.0,   # –    lift-to-drag ratio (lower: larger/draggier H2 aircraft)
-    eps_GH2_pct =   6.0,   # %    350-bar Type-IV CFRP  → 200 km
+    eps_GH2_pct =   6.0,   # %    700-bar Type-IV CFRP  → 200 km
     eps_LH2_pct =  15.0,   # %    cryo vacuum vessel    → 500 km
     eta_fc_pct  =  52.0,   # %    LHV-based FC system efficiency
 )
 
 # Achievable ε windows (shading on sweep plot)
-GH2_LO, GH2_HI = 0.030, 0.090   # 350-bar Type-IV CFRP
+GH2_LO, GH2_HI = 0.030, 0.090   # 700-bar Type-IV CFRP
 LH2_LO, LH2_HI = 0.080, 0.300   # cryogenic, prototype → mature
 
 
@@ -139,7 +139,7 @@ for bar, r in zip(bars, [c0['R_GH2'], c0['R_LH2']]):
     bar_labels.append(t)
 
 ax1.set_xticks([0, 1])
-ax1.set_xticklabels(["GH₂  350 bar\n(H2-Sling)", "LH₂  cryo\n(next FP)"], color=TEXT, fontsize=9)
+ax1.set_xticklabels(["GH₂  700 bar\n(H2-Sling)", "LH₂  cryo\n(next FP)"], color=TEXT, fontsize=9)
 ax1.set_ylabel('Range  [km]')
 ax1.set_title('Range Comparison', fontsize=9, pad=5)
 ax1.set_ylim(0, 700)
