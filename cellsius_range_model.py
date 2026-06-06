@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Cellsius H2 Aircraft Range Model — Interactive
+CELLSIUS H2 Aircraft Range Model — Interactive
 ===============================================
 Physics (Breguet-style, constant-altitude cruise):
 
@@ -44,7 +44,7 @@ m_base    = 613.0   # kg  airframe + 105 kW e-motor + prop + avionics (no FC, no
 m_payload = 170.0   # kg  2 pilots
 eta_prop  =   0.79  # motor × ESC × propeller
 
-# ── Slider defaults (calibrated to Cellsius targets) ──────────────────────────
+# ── Slider defaults (calibrated to CELLSIUS targets) ──────────────────────────
 D0 = dict(
     budget_fc   =  87.0,   # kg   tank + H2  (→ 5.2 kg H2 at ε=6 %, MTOW=1050 kg)
     m_fc        = 180.0,   # kg   FC stack + BoP (105 kW system)
